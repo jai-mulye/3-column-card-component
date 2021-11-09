@@ -1,0 +1,116 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: #f2f2f2;
+}
+
+.container {
+background-color: #fff;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: row;
+padding: 4rem;
+}
+
+section {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    min-width: 14.8rem;
+    max-width: 14.8rem;
+    height: 24rem;
+    padding: 2.2rem 2rem 2.6rem 2.4rem;
+}
+
+.sedan {
+    background-color: #e28525;
+    border-radius: 0.4rem 0rem 0rem 0.4rem;
+}
+
+.suv {
+    background-color: #016972;
+}
+
+.luxury {
+    background-color: #00403f;
+    border-radius: 0rem 0.4rem 0.4rem 0rem;
+}
+
+.logo img {
+    width: 3rem;
+    height: 1.8rem;
+}
+
+.car_type {
+    margin-top: 1.1rem;
+    font-family: 'Teko', sans-serif;
+    font-size: 2.1rem;
+    letter-spacing: -0.04rem;
+}
+
+.description {
+    margin-top: 0.6rem;
+    font-family: Helvetica;
+    font-size: 0.8rem;
+    font-weight: 500;
+    line-height: 1.2rem;
+}
+
+.learn_more {
+    margin-top: 4rem;
+}
+
+.learn_more button {
+    background-color: #f2f2f2;
+    border: 2px white solid;
+    border-radius: 30px 30px 30px 30px;
+    outline: none;
+    padding: 0.6rem 1.4rem;
+}
+
+.sedan button {
+    color: #e28525;
+    
+}
+
+.sedan button:hover {
+    color: #f2f2f2;
+    background-color: #e28525;
+    border: 2px #f2f2f2 solid;
+}
+
+.suv button {
+    color: #016972;
+}
+
+.suv button:hover {
+    color: #f2f2f2;
+    background-color: #016972;
+    border: 2px #f2f2f2 solid;
+}
+
+.luxury button {
+    color: #00403f;
+}
+
+.luxury button:hover {
+    color: #f2f2f2;
+    background-color: #00403f;
+    border: 2px #f2f2f2 solid;
+}
+
+@media all and (max-width: 768px)  {
+     .container {
+         flex-direction: column;
+     }
+
+     .sedan {
+        border-radius: 0.4rem 0.4rem 0rem 0rem;
+     }
+
+     .luxury {
+        border-radius: 0rem 0rem 0.4rem 0.4rem;
+     }
+}
